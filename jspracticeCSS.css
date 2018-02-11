@@ -11,28 +11,20 @@ body {
 	font-size: 1.75em;
 	line-height: 140%;
 	position: relative;
-	background-color: #54F957;
+	background-color: #21F7FF;
 }
 
-/** Header General Styles **/
-header h1 {
-	font-family: 'Francois One', sans-serif; 
-	font-weight: normal;
-	font-size: 3em;
-	text-transform: uppercase;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	font-family: 'Roboto Condensed', Calibri, Raleway;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 120%;
 	margin: 0;
-	color: #C9243D;
+	color: #F43535;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -42,7 +34,9 @@ h2 {
 }
 
 p {
-	border-top: 5px double #C9243D;
-	border-bottom: 5px double #C9243D;
 	text-align: center;
+}
+
+#click {
+	margin-left: 555px;
 }

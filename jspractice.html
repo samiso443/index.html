@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS Page</title>
+	<link rel="stylesheet" href="jspracticeCSS.css">
+	<style type="text/css">
+		#box {
+			margin-top: 20px;
+			margin-left: 500px;
+			height: 200px;
+			width: 200px;
+			background: #F43535;
+		}
+
+		div {
+			margin-bottom: 20px;
+		}
+
+		#box:hover {
+			cursor: pointer;
+		}
+
+		#click:hover {
+			cursor: pointer;;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1>Hello again! Here are some JavaScript examples!</h1>
+<h2><a href="file:///C:/Users/Sami/Documents/GitHub/samiso443.github.io/index.html">Click here</a> to go to my index page</h2>
+
+<div id="box" onclick="show_sentence()"></div>	
+
+
+	<p id="clickBox">Click the color box to make text appear</p>
+	<p>Click the button to change box color</p>
+	<button type="button" id="click" onclick="button_click('#F79C25');">Click Me</button>
+
+<script>
+
+function show_sentence(){
+	document.getElementById("box").innerHTML = document.getElementById("clickBox").innerHTML;
+}
+
+function button_click(color) {
+     document.getElementById("box").style.backgroundColor = color;
+}
+
+</script>
+
+</body>
+
+</html>
