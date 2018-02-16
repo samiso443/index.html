@@ -27,7 +27,7 @@ h1, h3 {
 	font-size: 1.5em;
 }
 
-h2 {
+h2.title {
 	font-size: 1.5em;
 	text-shadow: 1px 1px 2px #000000; 
 }
@@ -39,6 +39,7 @@ table.center {
 
 table {
 	margin-top: 40px;
+	margin-bottom: 40px;
 }  
 
  
