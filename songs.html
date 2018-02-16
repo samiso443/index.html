@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Music Page</title>
+	<link rel="stylesheet" href="songsCSS.css">
+	<script>
+		var songs = [
+			{
+				"Title": "Stay 100",
+				"Artist": "Smooky Margielaa",
+				"Time": "3:12"
+			},
+			{
+				"Title": "Get Right Witcha",
+				"Artist": "Migos",
+				"Time": "4:17"
+			},
+			{
+				"Title": "UnFazed",
+				"Artist": "Lil Uzi Vert",
+				"Time": "3:11"
+			},
+			{
+				"Title": "Outlet",
+				"Artist": "Desiigner",
+				"Time": "4:29"
+			},
+			{
+				"Title": "There He Go",
+				"Artist": "Kodak Black",
+				"Time": "3:17"
+			}
+		];
+	</script>
+
+</head>
+
+<body>
+	
+	<h1>JavaScript Objects</h1>
+	<h2>Songs Table</h2>
+	
+	<table border=1 class="center">
+		<thead>
+			<tr>
+				<th>Title</th><th>Artist</th><th>Time</th>
+			</tr>
+		</thead>
+		<tbody id="playlist">
+				
+		</tbody>
+	</table>
+
+<script>
+
+	var data = ""
+	for(var x in songs) {
+		if (songs.hasOwnProperty(x)) {
+			var obj = songs[x];
+			data += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Time'] + "</td></tr>"
+		}
+	}
+	document.getElementById("playlist").innerHTML = data;
+
+</script>
+
+</body>
+
+</html>
