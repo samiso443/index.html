@@ -13,7 +13,7 @@ body {
 	position: relative;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Roboto Condensed', Calibri, Raleway;
 	font-variant: normal;
 	font-weight: 500;
@@ -23,7 +23,7 @@ h1, h2 {
 	text-align: center;
 }
 
-h1 {
+h1, h3 {
 	font-size: 1.5em;
 }
 
@@ -31,6 +31,7 @@ h2 {
 	font-size: 1.5em;
 	text-shadow: 1px 1px 2px #000000; 
 }
+
 
 table.center {
     margin-left:auto; 
