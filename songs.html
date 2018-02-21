@@ -9,27 +9,27 @@
 			{
 				"Title": "Stay 100",
 				"Artist": "Smooky Margielaa",
-				"Time": "3:12"
+				Time: 192
 			},
 			{
 				"Title": "Get Right Witcha",
 				"Artist": "Migos",
-				"Time": "4:17"
+				Time: 257
 			},
 			{
 				"Title": "UnFazed",
 				"Artist": "Lil Uzi Vert",
-				"Time": "3:11"
+				Time: 191
 			},
 			{
 				"Title": "Outlet",
 				"Artist": "Desiigner",
-				"Time": "4:29"
+				Time: 269
 			},
 			{
 				"Title": "There He Go",
 				"Artist": "Kodak Black",
-				"Time": "3:17"
+				Time: 197
 			}
 		];
 	</script>
@@ -44,24 +44,49 @@
 	<table border=1 class="center">
 		<thead>
 			<tr>
-				<th>Title</th><th>Artist</th><th>Time</th>
+				<th>Title</th><th>Artist</th><th>Time (s)</th>
 			</tr>
 		</thead>
-		<tbody id="playlist">
-				
-		</tbody>
+		<tbody id="playlist"></tbody>
+
+		<thead>
+			<tr>
+				<th>Song Count</th><th>Artist Count</th><th>Total Time (s)</th>
+			</tr>
+		</thead>
+		<tbody id="stats"></tbody>
 	</table>
 
 <script>
+	// function addTime(t) {
+	// 	var totalTime = 0;
+	// 	for (var i = 0; i < t.length; i++) {
+	// 		if (!NaN(t[i])) {
+	// 			totalTime += t[i]
+	// 		}
+	// 	}
+	// 	return totalTime;
+	// }
+	var totalTime = 0;
+	for (var t in songs) {
+		if (!isNaN(songs[t])) {
+			totalTime += songs[t];
+		}
+	}
 
+	var count = 0;
+	var statData = ""
 	var data = ""
-	for(var x in songs) {
+	for (var x in songs) {
 		if (songs.hasOwnProperty(x)) {
+			++count;
 			var obj = songs[x];
 			data += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Time'] + "</td></tr>"
 		}
 	}
+	statData += "<tr><td>" + count + "</td><td>" + count + "</td><td>" + totalTime + "</td></tr>"
 	document.getElementById("playlist").innerHTML = data;
+	document.getElementById("stats").innerHTML = statData;
 
 </script>
 
