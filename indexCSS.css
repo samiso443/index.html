@@ -11,7 +11,7 @@ body {
 
 .nav {
 	margin-top: 20px;
-	padding-left: 355px;
+	padding-left: 450px;
 }
 
 .nav ul {
@@ -23,22 +23,22 @@ body {
 
 .nav li {
   font-family: 'Francois One';
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 40px;
   height: 40px;
-  border-bottom: 1px solid #888;
   text-decoration: underline;
+  margin: 1%;
 }
 
 .nav a {
   text-decoration: none;
-  color: #0cd39e;
+  color: #0CD39E;
   display: block;
   transition: .7s background-color;
 }
 
 .nav a:hover {
-  background-color: #e1eae9;
+  background-color: #E1EAE9;
 }
  
 /*@media screen and (min-width: 600px) {
@@ -53,7 +53,7 @@ body {
 /*Display Nav Bar Inline */
 .nav li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
 .hero-box {
@@ -105,4 +105,13 @@ p {
 	margin-top: 20%;
 	margin-bottom: 30px;
 	background-image: url(images/footer-background-02.jpg);
+}
+
+#footnote {
+	font-family: 'Roboto Condensed';
+	color: white;
+	margin-top: -7px;
+	text-align: center;	
+	text-shadow: 0.75px 0.75px black;
+	
 }
