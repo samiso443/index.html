@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Francois+One');
 /* CSS Document */
 
-/*nav {
-	float: right;
-	padding-right: 20px;
-}
-*/
 body {
 	max-width: 1024px;
 	margin-left: auto;
@@ -21,7 +16,6 @@ body {
 
 .nav ul {
   list-style: none;
-  /*background-color: #444;*/
   text-align: center;
   padding: 0;
   margin-top: 0;
@@ -47,65 +41,34 @@ body {
   background-color: #e1eae9;
 }
  
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {
   .nav li {
     width: 120px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
-  }
+  }*/
 
-/* Option 1 - Display Nav Bar Inline */
+/*Display Nav Bar Inline */
 .nav li {
     display: inline-block;
     margin-right: 10px;
   }
 
- /*Options 2 - Float*/
- /* .nav li {
-    float: right;
-  } */
-
-  /*.nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  } */
-
-/*nav ul li {
-	list-style-type: none;
-	padding-left: 20px;
-	text-align: right;
-}
-
-a {
-	text-decoration: underline;
-	color: #2BA273;
-}*/
-
 .hero-box {
 	height: 338px;
-	background-color: #FF00D7;
+	background-color: #0CD39E;
 	background-image: url(images/peopletech.jpeg);
 	margin-top: 30px;
 	padding-bottom: 50px;
-}
-
-h1 {
-	font-family: Calibri;
-	color: #FEFEFE;	
-	font-size: 100px;
-	padding-top: 120px;
-	padding-left: 150px;
-	text-shadow: 2px 2px black;
 }
 
 h2 {
 	font-family: 'Roboto Condensed';
 	color: white;
 	text-align: center;
-	text-shadow: 1.5px 1.5px #0d4435;
+	text-shadow: 1.5px 1.5px #0D4435;
 }
 
 p {
@@ -132,4 +95,14 @@ p {
 	background: #0cd39e;
 	margin-top: 20px;
 	float: left;
+}
+
+.footer {
+	position: absolute;
+	background-color: #E1EAE9;
+	height: 65px;
+	width: 81%;
+	margin-top: 20%;
+	margin-bottom: 30px;
+	background-image: url(images/footer-background-02.jpg);
 }
