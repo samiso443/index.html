@@ -1,51 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Index Page</title>
-<link rel="stylesheet" href="indexCSS.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>INST377 Index Page</title>
+	<link rel="stylesheet" href="demo-2-CSS.css">
 </head>
-
 <body>
 	<header>
-		<div class="title"><h1>INST377-ssheikh</h1></div>
-	
-		<div class="nav">
-      		<ul>
-        		<li class="home"><a href="#">Home</a></li>
-        		<li class="examples"><a href="https://samiso443.github.io/jspractice.html">Examples</a></li>
-        		<li class="songs"><a href="https://samiso443.github.io/songs.html">Songs</a></li>
-        		<li class="news"><a href="#">Newsletter</a></li>
-        		<li class="contact"><a href="#">Contact</a></li>
-      		</ul>
-    	</div>		
-	</header>
-	
-	
-	
-	<main>
-		<div class="hero-box">
-			
-		</div>
+		<div class="container">
+			<div id="logo">
+				<h1><span class="highlight">INST377</span>SSHEIKH</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="https://samiso443.github.io/">HOME</a></li>
+					<li><a href="https://samiso443.github.io/jspractice.html">EXAMPLES</a></li>
+					<li><a href="https://samiso443.github.io/songs.html">SONGS</a></li>
+					<li><a href="#">ASSIGNMENTS</a></li>
+				</ul>
+			</nav>
 
-		<div class="col-1">
-			<h2>Welcome to my Index Page!</h2>
-			<p>This is my platform where I will practice new HTML, CSS, JavaScript, SQL, and PHP skills. This will enable you to have access to most completed in-class exercises added to my github site.</p>
 		</div>
-		<div class="col-2">
-			<h2>JavaScript Examples</h2>
-			<p>Click on the <i>Examples</i> button in the navigation bar to go to my JavaScript examples page. Or you can <a href="https://samiso443.github.io/jspractice.html">Click Here</a></p>
+	</header>
+
+	<section id="hero-space">
+		<div class="container">
+			<h1 id="title">Welcome to INST377!</h1>
+			<p>We'll be exploring HTML, CSS, JavaScript, &amp; PHP in this Information Science course!</p>
 		</div>
-		<div class="col-3">
-			<h2>Playlist Excercise</h2>
-			<p>Click on the <i>Songs</i> button in the navigation to go to my JavaScript objects music page. Or you can <a href="https://samiso443.github.io/songs.html">Click Here</a></p>
+	</section>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Subscribe To Our Newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button-1">Subscribe</button>
+			</form>
 		</div>
-	</main>
-	
-	
-	
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box-1">
+				<img src="images/html5.png">
+				<h3>Welcome to my Index Page!</h3>
+				<p>This is my platform where I will practice new HTML, CSS, JavaScript, SQL, and PHP skills. This will enable you to have access to most completed in-class exercises added to my github site.</p>
+			</div>
+			<div class="box-2">
+				<img src="images/js-logo.png">
+				<h3>JavaScript Examples</h3>
+				<p>Click on the <i>Examples</i> button in the navigation bar or <a href="https://samiso443.github.io/jspractice.html">Here</a> to access my JavaScript examples page.</p>
+			</div>
+			<div class="box-3">
+				<img src="images/music-app.png">
+				<h3>Songs Playlist</h3>
+				<p>Click on the <i>Songs</i> button in the navigation to go to my JavaScript objects music page or <a href="https://samiso443.github.io/songs.html">Click Here</a></p>
+			</div>
+		</div>
+	</section>
+
 	<footer>
-		<div class="footer"><p id="footnote">This website is will be experiencing ongoing adjustments throughout the semester. <br> Note that the <i>Home, Newsletter, </i>and<i> Contact</i> buttons are currently inactive. In the meantime, <a href="https://github.com/samiso443/INST377-sheikh">Click Here</a> to access my GitHub Repo for the course.</p></div>
+		<p>To access my GitHub Repo, <a href="https://github.com/samiso443/INST377-sheikh">Click Here</a></p>
 	</footer>
 
 </body>

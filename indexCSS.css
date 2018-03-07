@@ -1,126 +1,187 @@
+/*Core Stylesheet*/
+
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Francois+One');
-/* CSS Document */
 
 body {
-	max-width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #fff;
+	/*font-family: Arial;
+	font-size: 15px;
+	line-height: 1.5;*/
+	font: 15px/1.5 Arial;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
 }
 
-.title {
-	float: left;
-	font-family: 'Francois One';
-  	font-size: 1.5em;
-  	margin-top: -40px;
-  	padding-left: 50px;
-  	color: #0CD39E;
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
 }
 
-.nav {
-	margin-top: 20px;
-	padding-left: 450px;
+ ul {
+	margin: 0;
+	padding: 0;
 }
 
-.nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin-top: 0;
+.button-1 {
+	height: 38px;
+	background: #60e3e5;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	font-weight: bold;
 }
 
-.nav li {
-  font-family: 'Francois One';
-  font-size: 1.5em;
-  line-height: 40px;
-  height: 40px;
-  text-decoration: underline;
-  margin: 1%;
+/* Header */
+header {
+	background: #495e5e;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #60e3e5 5px solid; 
 }
 
-.nav a {
-  text-decoration: none;
-  color: #0CD39E;
-  display: block;
-  transition: .7s background-color;
-}
-
-.nav a:hover {
-  background-color: #E1EAE9;
-}
- 
-/*@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }*/
-
-/*Display Nav Bar Inline */
-.nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-
-.hero-box {
-	height: 338px;
-	background-color: #0CD39E;
-	background-image: url(images/peopletech.jpeg);
-	margin-top: 30px;
-	padding-bottom: 50px;
-}
-
-
-h2 {
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 24px;
 	font-family: 'Roboto Condensed';
-	color: white;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #logo {
+	float: left;
+}
+
+header #logo h1 {
+	margin: 0;
+	font-family: 'Roboto Condensed';
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight {
+	color: #60e3e5;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #60e3e5;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* Hero-Space */
+#hero-space {
+	min-height: 400px;
+	background: url('images/pattern.jpg') no-repeat 0 -300px;
 	text-align: center;
-	text-shadow: 1.5px 1.5px #0D4435;
+}
+
+#hero-space h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+#hero-space p {
+	font-size: 24px;
+}
+
+section .container #title {
+	font-family: 'Roboto Condensed';
+	color: #495e5e;
+	text-shadow: 2px 2px #ffffff;
 }
 
 p {
 	font-family: 'Roboto Condensed';
-	color: white;
-	text-align: center;
-	padding: 2%;
-	margin: 2%;
+	font-size: 20px;
 }
 
-.col-1, .col-2 {
-	height: 200px;
-	width: 32.2%;
-	background: #0cd39e;
-	margin: 2%;
-	margin-top: 20px;
-	margin-left: 0;
+/* Newsletter Space - for aesthetics */
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #495e5e;
+}
+
+#newsletter h1 {
 	float: left;
+	color: #ffffff;
 }
 
-.col-3 {
-	height: 200px;
-	width: 31.6%;
-	background: #0cd39e;
-	margin-top: 20px;
-	float: left;
-}
-
-.footer {
-	position: absolute;
-	background-color: #E1EAE9;
-	height: 65px;
-	width: 81%;
-	margin-top: 20%;
-	margin-bottom: 30px;
-	background-image: url(images/footer-background-02.jpg);
-}
-
-#footnote {
+section .container h1 {
 	font-family: 'Roboto Condensed';
-	color: white;
-	margin-top: -7px;
-	text-align: center;	
-	text-shadow: 0.75px 0.75px black;	
+	color: #495e5e;
+}
+
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 300px;
+}
+
+/*Boxes*/
+#boxes {
+	margin-top: 30px;
+}
+
+.box-1, .box-2 {
+	float: left;
+	text-align: center;
+	width: 31%
+}
+
+.box-3 {
+	float: left;
+	text-align: center;
+	width: 30%
+}
+
+.box-1, .box-2, .box-3 {
+	height: 325px;
+	padding: 10px;
+	border: #cccccc solid 2px;
+	margin: 5px;
+	background: #e6e6e6;
+}
+
+#boxes img {
+	width: 90px;
+}
+
+#boxes h3 {
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	font-size: 24px;
+}
+
+/*Footer*/
+footer {
+	padding: 20px;
+	margin-top: 30px;
+	color: #ffffff;
+	background-color: #495e5e;
+	text-align: center;
+}
+
+footer p {
+	font-size: 20px;
 }
