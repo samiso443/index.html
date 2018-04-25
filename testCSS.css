@@ -1,5 +1,5 @@
 :root {
-  --jumbotron-padding-y: 3rem;
+  --jumbotron-padding-y: 4rem;
 }
 
 .jumbotron {
@@ -8,6 +8,7 @@
   margin-bottom: 0;
   background: url('images/oakland-hall.jpg') no-repeat 0 -260px;
   background-size: 1300px 800px;
+  min-height: 375px; 
 }
 
 .lead {
@@ -58,4 +59,16 @@ footer p {
   padding-left: 5rem;
   font-weight: 300;
   font-size: 2rem;
+}
+
+.about-header {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.row {
+  /*text-align: center;*/
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
