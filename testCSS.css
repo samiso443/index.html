@@ -61,7 +61,7 @@ footer p {
   font-size: 2rem;
 }
 
-.about-header {
+.about-header, .contact-header {
   text-align: center;
   font-weight: 300;
   font-size: 2rem;
@@ -71,4 +71,16 @@ footer p {
   /*text-align: center;*/
   padding-right: 5rem;
   padding-left: 5rem;
+}
+
+.form-area
+{
+  background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid grey;
+  }
+
+.col-md-5 {
+  margin: auto;
 }
