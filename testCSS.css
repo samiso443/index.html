@@ -84,3 +84,7 @@ footer p {
 .col-md-5 {
   margin: auto;
 }
+
+.pull-right {
+  float: right;
+}
