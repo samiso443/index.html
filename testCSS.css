@@ -68,18 +68,20 @@ footer p {
 }
 
 .row {
-  /*text-align: center;*/
   padding-right: 5rem;
   padding-left: 5rem;
 }
 
-.form-area
-{
+.form-area {
   background-color: #fafafa;
   padding: 10px 40px 60px;
   margin: 10px 0px 60px;
   border: 1px solid grey;
-  }
+}
+
+.red {
+  color:red;
+} 
 
 .col-md-5 {
   margin: auto;
