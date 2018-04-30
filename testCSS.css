@@ -55,11 +55,16 @@ footer p {
   margin-right: 1rem;
 }
 
-.feature-header {
+.feature-header, .get-started-header {
   padding-left: 5rem;
   font-weight: 300;
   font-size: 2rem;
+  text-align: center;
 }
+
+/*.get-started-header {
+
+}*/
 
 .about-header, .contact-header {
   text-align: center;
