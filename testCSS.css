@@ -55,16 +55,12 @@ footer p {
   margin-right: 1rem;
 }
 
-.feature-header, .get-started-header {
+.feature-header, .get-started-header, .hall-header {
   padding-left: 5rem;
   font-weight: 300;
   font-size: 2rem;
   text-align: center;
 }
-
-/*.get-started-header {
-
-}*/
 
 .about-header, .contact-header {
   text-align: center;
@@ -94,4 +90,21 @@ footer p {
 
 .pull-right {
   float: right;
+}
+
+.hall-img img {
+  float: right;
+}
+
+table {
+  margin-top: 20px;
+}
+
+.amen-heading {
+  color: #fff;
+}
+
+td {
+  font-size: 14px;
+  text-align: center;
 }
