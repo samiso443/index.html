@@ -116,4 +116,12 @@ td {
   padding: 60px;
   margin-bottom: 80px;
   font-size: 20px;
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.getstarted-button:hover {
+  background-color: #dc3545;
+  transition: 0.7s;
+  color: #fff;
 }
