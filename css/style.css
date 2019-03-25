@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova|EB Garamond|Poiret+One|Crimson+Text:400i');
+
+html {
+	scroll-behavior: smooth;
+}
+
+h2 {
+	/*font-family: 'Proxima Nova';*/
+	text-transform: uppercase;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+}
+
+.navbar-brand b {
+	font-weight: 1000;
+}
+
+.nav-item {
+	font-family: 'Proxima Nova';
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 1rem;
+}
+
+nav.nav-bg-color {
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: ease .9s; 
+}
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/ai-close.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro em {
+	font-family: 'Crimson Text';
+}
+
+section {
+	padding: 4rem;
+}
+
+section#about {
+	line-height: 190%;
+}
+
+#about, #portfolio {
+	background-color: #edeeef;
+}
+
+#about img {
+	/*width: 50%;*/
+	border-radius: 6px;
+}
+
+.card {
+	margin: .5rem;
+}
+
+.card-img {
+	max-height: 209px;
+}
+
+.card-title {
+	margin: 0;
+	text-shadow: 3px 3px 8px #000000;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	transition: all .4s ease;
+	z-index: 1000;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 575px) {
+	.card h3 {
+		font-size: 1.2rem;
+	}
+}
+
+#work i {
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+	color: #292A2B;
+}
+
+@media screen and (max-width: 426px) {
+	section {
+		padding-left:2rem; 
+		padding-right: 2rem; 
+	} 
+}
+
+footer {
+	color: #fff;
+	background-color: #263238;
+	padding: 3rem;
+}
+
+.list-inline-item a {
+	color: #fff;
+	margin-right: 1rem;
+}
+
+footer b {
+	font-weight: 900;
+}
+
+footer i {
+	font-size: 1.25rem;
+	color: #000;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}
+
+.icon {
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
